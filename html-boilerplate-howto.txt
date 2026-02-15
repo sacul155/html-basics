@@ -1,0 +1,49 @@
+ALL HTML documents have the same structure, or boilerplate, that must be in place before anything gets done.
+
+Every HTML page starts with a doctype declaration, which tells the browser which version of HTML to render.  The latest
+version is HTML5 and uses the following doctype:
+    <!DOCTYPE html>
+So every time a new HTML document is made, it must start with the doctype declaration.
+
+Every document also needs a root element in which every other element is written inside of.  The root element looks like
+this:
+    <html lang="en">
+    </html>
+The syntax is similar to other non-void elements with an opening and closing tag, of which the type is html.
+The word lang represents an HTML attribute given to an HTML tag.  lang specifies the language of the content on the HTML
+page.
+
+The next part of the boilerplate is the <head> element.  This contains metainformation about the webpage and stuff
+required to make the webpage render correctly.  There should be no elements that are meant to display contents inside of 
+the <head> element.  The structure of a <head> element looks like this:
+    <head>
+        <meta chartset="UTF-8">
+        <title>"Webpage Name"</title>
+    </head>
+The <meta> tag with the chartset encoding should always be in the <head> element to ensure the webpage will display
+special symbols and characters from different languages correctly in the browser.
+The <title> element should also always be included in the <head> element of an HTML document.  The title is what is
+displayed at the top of the browser page inside the tab.  Without a <title> element, it defaults to the name of the 
+HTML file, which for an HTML homepage would be index.html.
+
+The final part of the boilerplate is the <body> element.  This is where all displayed contents go, including text,
+images, links, etc.  The structure of the body is as follows:
+    <body>
+        /*Insert content here*/
+    </body>
+
+Putting everything together, this is the full structure for the HTML boilerplate:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta chartset="UTF-8">
+        <title>"Insert title here"</title>
+    </head>
+
+    <body>
+        <h1>"Hello World!"</h1>
+    </body>
+</html>
+
+In VS Code, you can shortcut the boilerplate by typing ! and hitting enter.  This only works for files with the .html
+extension.
