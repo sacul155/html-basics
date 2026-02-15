@@ -1,0 +1,29 @@
+Creating a link to a page in HTML is done using the <a> element, referred to as an anchor element.
+
+To make a link actually navigate to the destination page, you have to add an attribute to the anchor opening tag.
+    *Attributes give HTML elements additional information and ALWAYS goes in the element's opening tag.
+    *Attributes are usually made up of two parts: a name and a value, but not all attributes need a value.
+For a link, the name of the attribute used is href, or hypertext reference, and the value is the actual link URL.
+So if you have some text in an HTML document that you want to link to a webpage, this is the format:
+    <a href="URL">This is the text that will be highlighted blue.</a>
+
+By default, the above method will open the link in the same tab that is currently open.  To change this, add the "target"
+attribute to the opening anchor tag where you put the "href" attribute.  If the target value is "_self", it will open
+the link in the same tab.  The value "_blank" will open the link in a new tab or browser.
+    <a href="URL" target="_blank">Click here to open a new page</a>
+There is also another attribute you can add to the opening anchor tag called "rel" which can take on the value
+"noopener" or "norefferer".  The latter prevents certain details about the original page being passed to the new one.
+
+Absolute links go to a webpage on a separate website, and relative links go a page on the same website.
+Relative links do not need to include the URL since the page is on the same website.  Rather, it contains the file path
+to the other page relative to the one you are currently on.  So if you want to create a link on the homepage to another
+page on the website, the href attribute would look like this:
+    <a href="./subdirectory1/subdirectory2">this is the link</a>.
+
+To display an image in HTML we use the <img> element, which is void.  The "src" attribute tells us where the image is 
+located.  If displaying images hosted on your own web server, you can use a relative path like so:
+    <img src="./images/img1">
+Images should also have an "alt" attribute describing what the image displays.
+
+It's a good habit to always specify the image dimension with the attributes "height" and "width" like so:
+    <img src="./images/img1" height="500" width="500">

@@ -1,0 +1,31 @@
+This section gives an overview of elements used to display text in HTML.
+
+Paragraphs are written using the <p> element.  Each paragraph you want displayed needs to be wrapped in a separate pair
+of opening and closing <p> tags.
+    <p>This is a paragraph.</p>
+    <p>This is a separate paragraph.</p>
+
+Headings are made using h followed by a number 1-6, like <h1>, which is the largest heading you can display.  Subsequent
+numbers displayed increasingly smaller headings.
+    <h1>I'm the biggest</h1>
+    <h2>I'm second biggest</h2>
+    <h3>Third</h3>
+    <h4>Fourth</h4>
+    <h5>Fifth</h5>
+    <h6>I'm the smallest</h6>
+
+The <strong> element makes text bold.  You can use this element inline with text that is inside another element.
+    <p>This is how you make text <strong>bold</strong>.</p>
+The <em> element italicizes text and works the same way as the <strong> element.
+
+HTML comments can be used to write notes inside the HTML code while keeping it hidden on the actual webpage.
+    <!-- This is a comment. -->
+
+The following is an example of how to write a list in HTML using the <ul> element (bulleted) or <ol> element (numbered).
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+The items inside the <ul> element are the actual text being listed and are wrapped using the <li> element. An ordered
+list follows the exact same layout, except you replace <ul> with <ol>.
