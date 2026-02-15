@@ -1,0 +1,17 @@
+HTML stands for Hypertext Markup Language and is used to define the structure and contents of a webpage.
+
+Almost all elements on an HTML page are just pieces of content wrapped in opening and closing tags.  They act as
+containers for content.
+
+HTML tags are essential building blocks that define the structure and content of a webpage.  Tags are basically the ends 
+of an element that separates them from other elements.
+
+This is the general format of an HTML element with opening and closing tags:
+    <p> The p inside the opening tag denotes a paragraph element.  The closing tag is the same as the opening tag except
+    we add a / to the beginning to differentiate it.</p>
+
+Not all elements have a closing tag.  These are void elements, examples include:
+    <img>
+    <br>
+
+
